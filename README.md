@@ -2,7 +2,7 @@
 example on how to compose a lightbox with standard ZK components
 
 
-#### build from command line:
+#### build war file from command line:
 ```mvn clean package```
 
 
