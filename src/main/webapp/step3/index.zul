@@ -1,0 +1,8 @@
+<zk>
+	<vlayout apply='org.potix.zk_lightbox.LightboxExampleComposer'>
+		<a id="l1">anchor 1</a>
+		<a id="l2">anchor 2</a>
+		<a id="l3">anchor 3</a>
+		<a id="l4">anchor 4</a>
+	</vlayout>
+</zk>

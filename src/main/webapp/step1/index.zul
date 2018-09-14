@@ -1,0 +1,51 @@
+<zk>
+	<style>
+		.lightbox-arrow-right {
+	    	/* align right arrow to right border */
+	    	right: 0px;
+	    	text-align: right;
+		}
+		.lightbox-arrow-left, .lightbox-arrow-right {
+			width:30px;
+			height: 30px;
+		    position: absolute;
+		    /* display in front of everything */
+		    z-index: 999;
+		    /* top minus half of the arrow box height*/
+		    top: calc(50% - 15px);
+		    /* unicode arrows: font-size for bigger arrows */
+		    font-size: 30px;
+		    text-decoration: none;
+		}
+		.content-wrapper{
+			/* used as the referential for relatively positioned arrows */
+			position: relative;
+		}
+	</style>
+<!-- outer container -->
+	<window mode="modal" title="Lightbox prototype" closable="true">
+<!-- left arrow -->
+		<div sclass="content-wrapper">
+			<cardlayout id="card" width="300px" height="200px">
+	<!-- content start -->
+				<div height="100%" width="100%" style="background-color:palegoldenrod;padding:20px">
+					card 1 content
+				</div>
+				<div height="100%" width="100%" style="background-color:steelblue;padding:20px">
+					card 2 content
+				</div>
+				<div height="100%" width="100%" style="background-color:palegoldenrod;padding:20px">
+					card 3 content
+				</div>
+				<div height="100%" width="100%" style="background-color:steelblue;padding:20px">
+					card 4 content
+				</div>
+	<!-- content end -->
+			</cardlayout>
+			<a onClick="card.previous()" sclass="lightbox-arrow-left" iconSclass="z-icon-angle-left"/>
+	<!-- left right arrow -->
+			<a onClick="card.next()" sclass="lightbox-arrow-right" iconSclass="z-icon-angle-right"/>
+	<!-- inner container -->
+		</div>
+	</window>
+</zk>

@@ -1,0 +1,4 @@
+<div height="200px" width="300px" style="background-color:palegoldenrod;padding:20px">
+	<label value="template 1: " />
+	<label value="${templateText}"/>
+</div>

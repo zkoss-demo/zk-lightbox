@@ -1,0 +1,15 @@
+<zk>
+<!-- outer container -->
+	<window mode="modal" sclass="lightbox" title="Food and Drinks" closable="true">
+<!-- left arrow -->
+		<div sclass="content-wrapper" apply="org.potix.zk_lightbox.LightboxInnerComposer">
+			<cardlayout id="card" vflex="min" hflex="min" >
+				<forEach items="${arg.lightboxModel}">
+					<apply templateURI="${each.templateUri}" imageCaption="${each.imageCaption}" imageSource="${each.imageSource}" />
+				</forEach>
+			</cardlayout>
+			<a id="left" sclass="lightbox-arrow-left" iconSclass="z-icon-angle-left"/>
+			<a id="right" sclass="lightbox-arrow-right" iconSclass="z-icon-angle-right"/>
+		</div>
+	</window>
+</zk>

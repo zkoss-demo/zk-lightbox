@@ -1,0 +1,33 @@
+<?script src="/resources/custom-script.js"?>
+<?style src="/resources/custom-style.css"?>
+<zk xmlns:n="native">
+	<div sclass="page-container">
+		<hlayout sclass="gallery-box"
+			apply='org.potix.zk_lightbox.LightboxGalleryComposer'>
+			<vlayout width="140px" sclass="left-col">
+				<n:figure class="mini-caption gallery-top gallery-square">
+					<image id="image1" sclass="gallery-item gallery-square"
+						src="/resources/pizza.png" />
+					<n:figcaption class="mini-caption-text"><n:p>This is the first image</n:p></n:figcaption>
+				</n:figure>
+				<n:figure class="mini-caption">
+					<image id="image2" sclass="gallery-item gallery-tall gallery-bottom"
+						src="/resources/pasta.png" />
+					<n:figcaption class="mini-caption-text"><n:p>This is the second image</n:p></n:figcaption>
+				</n:figure>
+			</vlayout>
+			<vlayout width="136px" sclass="right-col">
+				<n:figure class="mini-caption gallery-top gallery-tall">
+					<image id="image3" sclass="gallery-item gallery-tall"
+						src="/resources/salad.png" />
+					<n:figcaption class="mini-caption-text"><n:p>This is the third image</n:p></n:figcaption>
+				</n:figure>
+				<n:figure class="mini-caption">
+					<image id="image4" sclass="gallery-item gallery-square gallery-bottom"
+						src="/resources/sushi.png" />
+					<n:figcaption class="mini-caption-text"><n:p>This is the fourth image</n:p></n:figcaption>
+				</n:figure>
+			</vlayout>
+		</hlayout>
+	</div>
+</zk>

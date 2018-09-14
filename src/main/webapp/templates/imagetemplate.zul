@@ -1,0 +1,6 @@
+<div width="441px" height="577px">
+	<image height="100%" width="100%" src="${imageSource}"/>
+	<div width="100%" sclass="gallery-caption">
+		<label width="100%" value="${imageCaption}"/>
+	</div>
+</div>

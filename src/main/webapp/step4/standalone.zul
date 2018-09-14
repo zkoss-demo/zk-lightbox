@@ -1,0 +1,18 @@
+<?script src="/resources/custom-script.js"?>
+<?style src="/resources/custom-style.css"?>
+<zk>
+<!-- outer container -->
+	<window mode="modal" sclass="lightbox" title="Lightbox prototype" closable="true">
+<!-- left arrow -->
+		<div sclass="content-wrapper">
+			<cardlayout id="card" vflex="min" hflex="min">
+					<apply templateURI="/templates/imagetemplate.zul" imageSource="/resources/pasta.png" imageCaption="This is the first image"/>
+					<apply templateURI="/templates/imagetemplate.zul" imageSource="/resources/pizza.png" imageCaption="This is the second image"/>
+					<apply templateURI="/templates/imagetemplate.zul" imageSource="/resources/salad.png" imageCaption="This is the third image"/>
+					<apply templateURI="/templates/imagetemplate.zul" imageSource="/resources/sushi.png" imageCaption="This is the fourth image"/>
+			</cardlayout>
+			<a onClick="card.previous()" sclass="lightbox-arrow-left" iconSclass="z-icon-angle-left"/>
+			<a onClick="card.next()" sclass="lightbox-arrow-right" iconSclass="z-icon-angle-right"/>
+		</div>
+	</window>
+</zk>

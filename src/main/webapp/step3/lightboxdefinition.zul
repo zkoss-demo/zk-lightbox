@@ -1,0 +1,37 @@
+<zk>
+	<style>
+		.lightbox-arrow-right {
+	    	/* align right arrow to right border */
+	    	right: 0px;
+	    	text-align: right;
+		}
+		.lightbox-arrow-left, .lightbox-arrow-right {
+			width:30px;
+			height: 30px;
+		    position: absolute;
+		    /* display in front of everything */
+		    z-index: 999;
+		    /* top minus half of the arrow box height*/
+		    top: calc(50% - 15px);
+		    /* unicode arrows: font-size for bigger arrows */
+		    font-size: 30px;
+		    text-decoration: none;
+		}
+		.content-wrapper{
+			position: relative;
+		}
+	</style>
+<!-- outer container -->
+	<window mode="modal" title="Lightbox prototype" closable="true" >
+<!-- left arrow -->
+		<div sclass="content-wrapper" apply="org.potix.zk_lightbox.LightboxInnerComposer">
+			<cardlayout id="card" hflex="min" vflex="min" >
+				<forEach items="${arg.lightboxModel}" var="item">
+					<apply templateURI="${item.templateUri}" templateText="${item.templateText}" />
+				</forEach>
+			</cardlayout>
+			<a id="left" sclass="lightbox-arrow-left" iconSclass="z-icon-angle-left"/>
+			<a id="right" sclass="lightbox-arrow-right" iconSclass="z-icon-angle-right"/>
+		</div>
+	</window>
+</zk>
